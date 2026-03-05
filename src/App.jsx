@@ -1,4 +1,7 @@
 function App() {
+  const fruit = (name) => {
+    alert(name);
+  };
   return (
     <>
       <div>
@@ -7,6 +10,14 @@ function App() {
         </h1>
         <Fruit></Fruit>
         <Color />
+      </div>
+      <div>
+        <h1>Event in funstio call</h1>
+        <button onClick={() => fruit("apple")}>apple</button>
+        <button onClick={() => fruit("banana")}>banana</button>
+        <h1 className="bg-green-400 font-bold text-2xl">
+          initionalized project
+        </h1>
       </div>
     </>
   );
